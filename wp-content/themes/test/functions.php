@@ -3,7 +3,7 @@
 /** ROOT CONFIG */
 
 namespace ArloSeed;
-use ArloSeed\Init
+use ArloSeed\Init;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
