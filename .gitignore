@@ -1,3 +1,8 @@
 node_modules
-wp-config.php
+yarn.lock
 package-lock.json
+composer.lock
+dist
+vendor
+wp-config.php
+wp-config-sample-copy.php
