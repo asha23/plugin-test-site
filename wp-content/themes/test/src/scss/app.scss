@@ -1,0 +1,19 @@
+
+// Theme specific
+
+@import 'core/utils/variables';
+@import 'core/typography/style';
+@import 'core/utils/mixins';
+@import 'core/utils/helpers';
+@import 'core/utils/reset';
+@import 'core/grid/main';
+
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+@import 'core/global';
+
+// Views
+@import 'views/common/footer';

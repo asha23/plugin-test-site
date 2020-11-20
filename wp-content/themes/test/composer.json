@@ -1,0 +1,38 @@
+{
+	"name": "asha23/arlo-framework-laravel-mix-seed-theme",
+	"license": "MIT",
+	"description": "Wordpress Base Theme.",
+	"type": "library",
+	"keywords": [
+		"wordpress"
+	],
+	"homepage": "http://ashwhiting.comk",
+	"authors": [
+		{
+			"name": "Ash Whiting <ash_whiting@hotmail.com>"
+		}
+	],
+	"require": {
+		"erusev/parsedown": "^1.7",
+		"samrap/acf-fluent":"^0.4.0",
+		"stoutlogic/acf-builder": "^1.9",
+		"wordplate/acf": "^8.1"
+	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "^3.4"
+	},
+	"extra": {
+		"installer-paths": {
+		  "vendor/{$vendor}/{$name}/": [
+			"type:wordpress-muplugin",
+			"type:wordpress-plugin",
+			"type:wordpress-theme"
+		  ]
+		}
+	  },
+	"autoload": {
+		"psr-4": {
+			"ArloSeed\\": "inc/"
+		}
+	}
+}

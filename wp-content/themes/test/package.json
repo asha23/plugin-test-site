@@ -1,0 +1,33 @@
+{
+  "name": "arlo-framework-laravel-mix-seed-theme",
+  "version": "0.1.0",
+  "description": "Larave Mix",
+  "main": "index.js",
+  "repository": "https://github.com/asha23/arlo-framework-laravel-mix-seed-theme.git",
+  "author": "Ash Whiting <ash_whiting@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "add": "^2.0.6",
+    "bootstrap": "^4.4.1",
+    "cross-env": "^7.0.0",
+    "jquery": "^3.4.1",
+    "laravel-mix": "^5.0.1",
+    "popper.js": "^1.16.1",
+    "yarn": "^1.22.0"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
