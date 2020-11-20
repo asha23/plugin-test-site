@@ -11,20 +11,9 @@
  *
  * @var bool
  */
-//define( 'WP_USE_THEMES', true );
+define( 'WP_USE_THEMES', true );
 
 /** Loads the WordPress Environment and Template */
-//require __DIR__ . '/wp-blog-header.php';
-?>
+require __DIR__ . '/wp-blog-header.php';
 
-<html>
-<head>
 
-</head>
-<body>
-ggg
-
-</body>
-<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f04f6941-fb83-4f2e-9c02-c797d907d56b" type="text/javascript" async></script>
-
-</html>
