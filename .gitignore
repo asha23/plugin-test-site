@@ -1,7 +1,7 @@
 node_modules
 yarn.lock
-package-lock.json
-composer.lock
+wp-content/themes/test/package-lock.json
+wp-content/themes/test/composer.lock
 wp-content/themes/test/dist
 wp-content/themes/test/vendor
 wp-config.php
