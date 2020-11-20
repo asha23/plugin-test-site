@@ -2,7 +2,7 @@ node_modules
 yarn.lock
 package-lock.json
 composer.lock
-dist
-vendor
+wp-content/themes/test/dist
+wp-content/themes/test/vendor
 wp-config.php
 wp-config-sample-copy.php
