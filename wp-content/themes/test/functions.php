@@ -1,5 +1,7 @@
 <?php
 
+/** ROOT CONFIG */
+
 namespace ArloSeed;
 
 require_once __DIR__ . '/vendor/autoload.php';
