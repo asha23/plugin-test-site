@@ -10,10 +10,3 @@ if (!defined('WP_ENV')) {
 
 $init_theme = new Init();
 $init_theme->init_theme();
-
-
-
-
-
-
-
