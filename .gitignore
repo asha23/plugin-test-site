@@ -7,3 +7,5 @@ wp-content/themes/test/vendor
 wp-config.php
 wp-config-sample-copy.php
 .DS_Store
+wp-content/uploads
+wp-content/upgrade
