@@ -1,29 +1,30 @@
 const mix = require('laravel-mix');
+const local = require('./local');
+require('laravel-mix-versionhash');
 
-const paths = {
-    js_src: 'src/js/app.js',
-    js_dest: 'dist/js',
-    scss_src: 'src/scss/app.scss',
-    css_dest: 'dist/css',
-    fontaweome_src: 'node_modules/@fortawesome/fontawesome-free/webfonts',
-    fontawesome_dest: 'src/scss/fontawesome-fonts'
+mix.setPublicPath('./build');
+
+mix.webpackConfig({
+    externals: {
+        "jquery": "jQuery",
+    }
+});
+
+if (local.proxy) {
+    mix.browserSync({
+        proxy: local.proxy,
+        injectChanges: true,
+        open: false,
+        files: [
+            'build/**/*.{css,js}'
+        ]
+    });
 }
 
-mix.js(paths.js_src, paths.js_dest)
-    .extract()
-    .then(() => {
-        console.log('webpack has finished building your scripts!');
-    })
-    .copy(paths.fontaweome_src, paths.fontawesome_dest)
-    .sass(paths.scss_src, paths.css_dest)
-    .webpackConfig({
-        devtool: 'source-map'
-    })
-    .then(() => {
-        console.log('webpack has finished building your styles!');
-    })
-    .setPublicPath('dist')
-    .disableNotifications()
-    .autoload({
-        jquery: ['$', 'window.jQuery']
-    })
+mix.js('assets/js/app.js', 'js');
+mix.sass('assets/scss/app.scss', 'css');
+
+if (mix.inProduction()) {
+    mix.versionHash();
+    mix.sourceMaps();
+}

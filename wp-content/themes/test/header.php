@@ -1,9 +1,3 @@
-<!DOCTYPE html>
+<?php get_template_part( 'templates/partials/document-open' ); ?>
 
-<?php get_template_part('views/common/main', 'head'); ?>
-
-<body <?php body_class(); ?>>
-
-<?php // Header ?>
-
-<?php get_template_part( 'views/common/main', 'header' ); ?>
+<!-- Site header markup goes here -->

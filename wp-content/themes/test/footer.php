@@ -1,8 +1,3 @@
-<?php // footer ?>
+<!-- Site footer markup goes here -->
 
-<?php get_template_part( 'views/common/main', 'footer' ); ?>
-
-<?php wp_footer(); ?>
-
-</body>
-</html>
+<?php get_template_part( 'templates/partials/document-close' );

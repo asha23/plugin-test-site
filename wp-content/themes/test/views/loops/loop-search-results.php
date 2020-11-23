@@ -1,3 +1,0 @@
-<?php
-
-// search results code
